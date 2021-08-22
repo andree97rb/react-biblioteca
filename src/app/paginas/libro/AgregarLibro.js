@@ -8,7 +8,6 @@ const AgregarLibro = () => {
     const [ libro, setLibro ] = useState({
         titulo: '',
         genero: '',
-        activo: 1,
         idEditorial: 0        
     });
     const [ autoresSeleccionados , setAutoresSeleccionados ] = useState([]);
