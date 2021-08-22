@@ -58,17 +58,6 @@ const EditarFormularioLibro = ({
                 <Row className="mt-3">
                     <Col>
                         <Form.Group>
-                            <Form.Label>Activo:</Form.Label>
-                            <Form.Check 
-                                type="checkbox"
-                                name="activo"
-                                checked={libro.activo === 1 ? true : false}
-                                onChange={onChange}
-                            />
-                        </Form.Group>
-                    </Col>
-                    <Col>
-                        <Form.Group>
                             <Form.Label>Editorial:</Form.Label>
                             <Typeahead
                                 size="sm"
@@ -85,8 +74,6 @@ const EditarFormularioLibro = ({
                             />
                         </Form.Group>
                     </Col>
-                </Row>
-                <Row className="mt-3">
                     <Col>
                         <Form.Group>
                             <Form.Label>Autor:</Form.Label>
@@ -100,8 +87,8 @@ const EditarFormularioLibro = ({
                                 selected={autoresSeleccionados}
                             />
                         </Form.Group>              
-                    </Col>         
-                </Row>
+                    </Col>        
+                </Row>                
                 <Row className="mt-3">
                     <Col>
                         <Button className="btn btn-primary" type="submit" style={{ marginRight: "10px" }}>

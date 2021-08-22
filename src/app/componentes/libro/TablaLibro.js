@@ -9,8 +9,7 @@ const TablaLibro = ({ listaLibros }) => {
                 <th>Nro</th>
                 <th>Titulo</th>
                 <th>genero</th>
-                <th>Editorial</th>                
-                <th>Activo</th>                
+                <th>Editorial</th>           
                 <th>Acción</th>
             </tr>
         );
@@ -25,7 +24,6 @@ const TablaLibro = ({ listaLibros }) => {
                     <td>{libro.titulo}</td>
                     <td>{libro.genero}</td>
                     <td>{libro.nombreEditorial}</td>
-                    <td>{libro.activo}</td>
                     <td>
                         <Link to={"/editarLibro/" + libro.id}>
                             Editar
