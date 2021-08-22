@@ -47,9 +47,7 @@ const EditarLibro = () => {
     
     const handleChange = (event) => {   
         const target = event.target;
-        const valor = target.type === 'checkbox' ?
-                        target.checked ? 1 : 0
-                    : target.value;
+        const valor = target.value;
         const nombre = target.name;
         setLibro({
             ...libro,
